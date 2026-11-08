@@ -17,6 +17,9 @@ def norm(url: str) -> str:
     p = urlsplit(url.strip())
     # drop tracking query/fragment; keep path, which identifies the job on all major sites
     keep_query = p.query if any(k in p.netloc for k in ("indeed.", "naukri.")) else ""
+    # company career pages that embed Greenhouse identify the job only by ?gh_jid=
+    if not keep_query and "gh_jid=" in p.query:
+        keep_query = "gh_jid=" + p.query.split("gh_jid=", 1)[1].split("&", 1)[0]
     return urlunsplit((p.scheme.lower(), p.netloc.lower(), p.path.rstrip("/"), keep_query, ""))
 
 
