@@ -21,6 +21,14 @@ Which ones? → all
 
 ---
 
+## 🧠 Asks once, remembers forever
+
+- **First run:** reads your resume, then asks **one fill-in line** — roles, locations, CTC, notice period, deal-breakers.
+- **During applications:** new screening questions are **batched** into one message instead of interrupting you per job.
+- **Every answer is saved** to your local profile and answers bank, then reused on every future form — next runs need almost **zero questions**.
+
+---
+
 ## 📄 A tailored resume for every job
 
 For each job it reads the JD, picks out the key skills, and builds a one-page resume that:
