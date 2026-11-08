@@ -1,0 +1,9 @@
+# personal data must never be committed
+profile.json
+answers.json
+applications.jsonl
+resume/
+cache/
+*.pdf
+__pycache__/
+*.pyc
